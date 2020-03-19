@@ -40,9 +40,9 @@ foreach($exp_list as $asu){
 	continue;
     }
 	if($kode==200){
-		echo "Dir ditemukan lanjut?(y/n) ";
+		echo "Dir ditemukan lanjut?(enter untuk lanjut || ketik n untuk keluar) ";
 		$lanjut=trim(fgets(STDIN));
-		if($lanjut=="y"){
+		if($lanjut==false){
 			continue;
 		}else{
 			exit;
